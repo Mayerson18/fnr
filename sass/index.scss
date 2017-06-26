@@ -6,6 +6,11 @@ body{
   font-family: font37300, sans-serif;
 }
 
+.background{
+  position: absolute;
+  height:772px;
+}
+
 .fondo{
   @include fondo(em(772px),"../img/banner.jpg",flex-start,flex-end,$blanco);
   background-attachment: fixed;
@@ -13,6 +18,7 @@ body{
 }
 
 .in-fondo{
+  position: relative;
   width: 57%;
   & > h2{
     @include textos(2.6125em,bold,$blanco,1.27);
