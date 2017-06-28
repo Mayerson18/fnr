@@ -1,9 +1,26 @@
 .modal
   .modal-background
   .modal-content
-    img(src="img/img3.png")
-    .h.tit3.center PLAN ASK 1,2,3
-    strong sajhdjkabsjk askhdksadksaahj
-      .content.box-contact
-        //a.button.boton-contact Contactanos
+    img(src="img/rectangle-2.png", class="background-modal")
+    img(src="img/logo.png", class="background2-modal")
+    .fondo-modal
+      p.center Minimiza los riesgos y elimina las preocupaciones, encuentra la seguridad con nosotros. Nuestros Servicios
+    form(action="" method="POST")
+      p.control.mt-2em
+        label(for="nombre") Nombre y Apellido
+        input(type="text" name="nombre" id="nombre" placeholder="EMAIL" required )
+      p.control
+        label(for="email") Email
+        input(type="text" name="email" id="email" required placeholder="TELEFONO")
+      p.control
+        label(for="telefono") Telefono
+        input(type="text" name="telefono" id="telefono" required placeholder="NOMBRE")
+      p.control
+        label(for="empresa") Empresa 
+        input(type="text" name="empresa" id="empresa" required placeholder="NOMBRE")
+    .foot-modal
+      .left
+        p.cell #[strong.cell Tlf:] 8503-7338 ·  #[strong.cell Fax:] 4700-2255
+        p info@corporacionfnr.com
+      a.button.boton-contact Enviar
   button.modal-close

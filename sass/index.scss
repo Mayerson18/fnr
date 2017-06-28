@@ -130,3 +130,45 @@ body{
  }
 
 .modal-content{ background-color: $blanco; }
+
+.fondo-modal{
+  @include fondo(em(400px),"../img/banner.jpg",center,center,$blanco);
+  & > * {
+    width: 70%;
+  }
+  & > p{
+    position: relative;
+    top: 28%;
+  }
+}
+
+
+.background-modal{
+  position: absolute;
+  height: 400px;
+  width: 100%;
+}
+
+.background2-modal{
+  position: absolute;
+  left: 35%;
+  top: 2%;
+}
+
+.control{
+  @include textos( 1.15em,300,$p1,initial);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+  padding: 0px 2em;
+  & > input{
+    width: 65%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    border: solid 1px #979797;
+    height: em(52px);
+  }
+}
+
+.foot-modal{
+  border-top: solid 1px #979797;
+}
