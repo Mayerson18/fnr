@@ -8,7 +8,8 @@ body{
 
 .background{
   position: absolute;
-  height:772px;
+  height:600px;
+  width: 100%;
 }
 
 .background2{
@@ -17,8 +18,14 @@ body{
   top: 1em;
 }
 
+.cell-container{
+  position: relative;
+  top: 3em;
+  left: 30%;
+}
+
 .fondo{
-  @include fondo(em(772px),"../img/banner.jpg",flex-start,flex-end,$blanco);
+  @include fondo(em(600px),"../img/banner.jpg",flex-start,flex-end,$blanco);
   background-attachment: fixed;
   padding: 0px 0px 3em 3em;
 }
@@ -30,7 +37,7 @@ body{
     @include textos(2.6125em,bold,$blanco,1.27);
   }
   & > p{
-    @include textos(em(20px),300,$blanco,2.25);
+    @include textos(em(20px),300,$blanco,1.3);
   }
 }
 

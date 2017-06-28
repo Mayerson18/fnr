@@ -4,7 +4,7 @@ mixin servicios(x)
       .column
         a(href="#",class="post-nav",data-img="img/img3.jpg") #{val}
 
-mixin section1(img,title,p)
+mixin section1(img,title,p,ser)
   .columns
     .column
       img(src="#{img}", class="change")
@@ -13,17 +13,17 @@ mixin section1(img,title,p)
       h2.titles.borde.pl-1em #{title}
       .pl-1em
         p.ps.mb-2em.pl-1em #{p}
-        +servicios(["Alarmas","Equipos CCTV","Monitoreo"])
-        +servicios(["Sensores de panico","Detectores de Metales","Control de Marcas"])
-      div.leer Leer Más
+        if(ser)
+          +servicios(["Alarmas","Equipos CCTV","Monitoreo"])
+          +servicios(["Sensores de panico","Detectores de Metales","Control de Marcas"])
         
 mixin section2(img,title,p)
   .columns
     .column
       h2.titles.borde.pl-1em #{title}
-      .pl-1em
-        p.ps.mb-2em.pl-1em #{p}
-      .leer.leer2 Leer Más
+      each val in p
+        .pl-1em
+          p.ps.mb-2em.pl-1em #{val}
 
     .column
       img(src="#{img}")

@@ -1,6 +1,8 @@
 $(".post-nav").hover(
   function() {//Mouseenter
-    var x = $(this).parent().parent().parent().parent().siblings().find("img");
+    //var x = $(this).parent().parent().parent().parent().siblings().find("img");
+    //EN CASO DE EXISTIR SECCIONES SIMILARES A ESTA!!
+    var x = $(".change");
     var img = $(this).data("img");
     var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
     $(x).removeClass("animated bounceOut fadeInLeft");
