@@ -77,7 +77,7 @@ body{
 }
 
 .box-container{
-  height: 128px;
+  height: 100px;
   max-height: 128px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -124,7 +124,7 @@ body{
 
 @import "foot";
 
-@media(max-width:768px){
+@media(max-width:em(768px)){
    .in-fondo{width: auto;}
    .boton{margin: 0px;}
  }

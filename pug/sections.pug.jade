@@ -5,7 +5,7 @@ mixin servicios(x)
         a(href="#",class="post-nav",data-img="#{val.img}") #{val.n}
 
 mixin section1(img,title,p,ser)
-  .columns
+  .columns.mt-2em-important
     .column
       if(ser)
         img(src="#{img}", class="change")
@@ -20,7 +20,7 @@ mixin section1(img,title,p,ser)
           +servicios([{n:"Sensores de panico",img:"img/elec-panic.png"},{n:"Detectores de Metales",img:"img/elec-metal.png"},{n:"Control de Marcas",img:"img/img5.png"}])
         
 mixin section2(img,title,p)
-  .columns
+  .columns.mt-2em-important
     .column
       h2.titles.borde.pl-1em #{title}
       each val in p
