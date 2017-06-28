@@ -1,7 +1,13 @@
+mixin servicios(x)
+  .columns
+    each val in x
+      .column
+        a(href="#",class="post-nav") #{val}
+
 mixin section1(img,title,p)
   .columns
     .column
-      img(src="#{img}")
+      img(src="#{img}", class="change")
         
     .column
       h2.titles.borde.pl-1em #{title}

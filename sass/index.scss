@@ -11,6 +11,12 @@ body{
   height:772px;
 }
 
+.background2{
+  position: absolute;
+  left: 1em;
+  top: 1em;
+}
+
 .fondo{
   @include fondo(em(772px),"../img/banner.jpg",flex-start,flex-end,$blanco);
   background-attachment: fixed;

@@ -5,17 +5,11 @@
 - var p4 = "Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu."
 - var nosotros = "Nuestra empresa, presentará cada mes la certificación de la CCSS, lo que probará que se encuentra al día, además las pólizas del INS las cuales son requisitos del Ministerio de Seguridad Publica, para toda Empresa que brinde Servicios de Seguridad Privada. "
 
-mixin servicios(x)
-  .columns
-    each val in x
-      .column
-        a(href="#",class="post-nav") #{val}
-        
-
 include sections.pug.jade
 include header.pug.jade
 body
   img(src="img/rectangle-2.png", class="background")
+  img(src="img/logo.png", class="background2")  
   div.fondo
     .in-fondo
       h2 ullamcorper id vitae erat. Nulla mollis sapien sollicitudin lacinia lacinia.
@@ -51,3 +45,4 @@ body
   
 
   include footer.pug.jade
+  script(src="js/index.js" type="text/javascript")
