@@ -7,8 +7,10 @@ mixin servicios(x)
 mixin section1(img,title,p,ser)
   .columns
     .column
-      img(src="#{img}", class="change")
-        
+      if(ser)
+        img(src="#{img}", class="change")
+      else
+        img(src="#{img}")
     .column
       h2.titles.borde.pl-1em #{title}
       .pl-1em
