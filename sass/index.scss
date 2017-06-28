@@ -163,7 +163,7 @@ body{
 .control{
   @include textos( .90em,300,$p1,initial);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 2em;
   padding: 0px 2em;
   & > input{
