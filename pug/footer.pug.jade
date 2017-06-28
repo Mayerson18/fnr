@@ -1,12 +1,11 @@
 mixin foot(x)
-  .column
-    .borde.pl-1em FNR
-    each val in x
-      .pl-1em
-        if(val==="Contactenos")
-          a.a.click(href="#") #{val}
-        else
-          a.a(href="#") #{val}
+  .borde.pl-1em FNR
+  each val in x
+    .pl-1em
+      if(val==="Contactenos")
+        a.a.click(href="#") #{val}
+      else
+        a.a(href="#") #{val}
 footer.footer
   .columns
     .column
@@ -16,7 +15,7 @@ footer.footer
           h3 CORPORACION NAVARRO RIVAS FNR S.A
           p.mini San Jose avenida segunda calle 6 edificio Jiménez Crespo quinto piso
           p.cell.cell-container #[strong.cell Tlf:] 8503-7338 ·  #[strong.cell Fax:] 4700-2255
-    .column
-      .columns
+    .column.pr
+      div
         +foot(["Servicios","Contactenos"])
         
