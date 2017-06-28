@@ -1,10 +1,15 @@
-var imgs = ["img/img2.jpg","img/img3.jpg","img/img4.jpg","img/img5.jpg"]
-var test = document.getElementsByClassName("img");
-
 $(".post-nav").hover(
-  function() {
-    $( this ).append( $( "<span> ***</span>" ) );
-  }, function() {
-    $( this ).find( "span:last" ).remove();
+  function() {//Mouseenter
+    var x = $(this).parent().parent().parent().parent().siblings().find("img");
+    var img = $(this).data("img");
+    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+    $(x).removeClass("animated bounceOut fadeInLeft");
+    $(x).addClass("animated bounceOut").one(animationEnd, function() {
+      $(this).attr("src",img);
+      $(this).removeClass('bounceOut').addClass("fadeInLeft").one(animationEnd, function() {
+        $(this).removeClass('animated fadeInLeft');
+      });
+    });
+  }, function() {//Mouseout
   }
 );
