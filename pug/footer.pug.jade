@@ -1,9 +1,12 @@
 mixin foot(x)
   .column
-    .borde.pl-1em COMMUNITY
+    .borde.pl-1em FRN
     each val in x
       .pl-1em
-        a.a(href="#") #{val}
+        if(val==="Contactenos")
+          a.a.click(href="#") #{val}
+        else
+          a.a(href="#") #{val}
 footer.footer
   .columns
     .column
@@ -15,5 +18,5 @@ footer.footer
           p.cell.cell-container #[strong.cell Tlf:] 8503-7338 ·  #[strong.cell Fax:] 4700-2255
     .column
       .columns
-        +foot(["Tech Blog","shop","Press"])
-        +foot(["Jobs","Contact","Partners"])
+        +foot(["Servicios","Contactenos"])
+        

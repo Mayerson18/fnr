@@ -8,9 +8,9 @@ mixin section1(img,title,p,ser)
   .columns.mt-2em-important
     .column
       if(ser)
-        img(src="#{img}", class="change")
+        img(src="#{img}", class="change img")
       else
-        img(src="#{img}")
+        img(src="#{img}", class="img")
     .column
       h2.titles.borde.pl-1em #{title}
       .pl-1em
@@ -28,4 +28,4 @@ mixin section2(img,title,p)
           p.ps.mb-1em.pl-1em #{val}
 
     .column
-      img(src="#{img}")
+      img(src="#{img}",class="img")
