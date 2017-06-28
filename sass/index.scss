@@ -156,13 +156,13 @@ body{
 }
 
 .control{
-  @include textos( 1.15em,300,$p1,initial);
+  @include textos( .90em,300,$p1,initial);
   display: flex;
   justify-content: space-between;
   margin-bottom: 2em;
   padding: 0px 2em;
   & > input{
-    width: 65%;
+    width: 45%;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     border: solid 1px #979797;
     height: em(52px);
