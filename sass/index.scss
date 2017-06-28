@@ -85,7 +85,7 @@ body{
 
 .box-red{
   background-color: $rojo;
-  @include textos( 1.4625em,normal,$blanco,initial);
+  @include textos( 1.15em,normal,$blanco,initial);
   letter-spacing: .2px;
   padding: 1em 2em;
   margin-bottom: 1em;
@@ -93,7 +93,7 @@ body{
 
 .box-gris{
   background-color: #f1f1f1;;
-  @include textos( 1.4625em,normal,$p1,initial);
+  @include textos( 1.15em,normal,$p1,initial);
   letter-spacing: .2px;
   padding: 1em 2em;
   margin-bottom: 1em;
