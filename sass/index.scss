@@ -172,6 +172,13 @@ body{
     border: solid 1px #979797;
     height: em(52px);
   }
+  & > label{
+    padding-top: 1em;
+    width: 150px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
 }
 
 .foot-modal{
