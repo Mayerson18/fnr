@@ -123,3 +123,8 @@ body{
 }
 
 @import "foot";
+
+@media(max-width:768px){
+   .in-fondo{width: auto;}
+   .boton{margin: 0px;}
+ }
