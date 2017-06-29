@@ -1,9 +1,15 @@
+
 @import "vars";
 @import "mixins";
 @import "margenes";
 
+@font-face {
+  font-family: 'SFNS';
+  src: url(../font/SystemSanFranciscoDisplayRegular.ttf);
+}
+
 body{
-  font-family: font37300, sans-serif;
+  font-family: 'SFNS', sans-serif;
 }
 
 .background{
