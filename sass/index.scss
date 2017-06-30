@@ -54,6 +54,7 @@ body{
 
 .ps{
   @include textos(1.070em,normal,$p2,1.44);
+  text-align: justify;
 }
 
 .borde-ancho{
