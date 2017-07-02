@@ -16,6 +16,23 @@ $(".post-nav").hover(
   }
 );
 
+var images = [];
+function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
+
+preload(
+  "img/elec-alarm.png",
+  "img/elec-cctv.png",
+  "img/elec-monitoreo.png",
+  "img/elec-panic.png",
+  "img/elec-metal.png",
+  "img/img5.png"
+);
+
 $(".click").click(function(){
   $(".modal").addClass("is-active");
 })
